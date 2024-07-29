@@ -1,0 +1,55 @@
+body {
+    margin: 20px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-family: "Playfair Display", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #eb8d46;
+}
+
+h2 {
+    color: #eb8d46;
+}
+
+a {
+    color: #3f5db7;
+    font-style: italic;
+}
+
+.imgMain {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    border: 20px solid #3f5db7;
+}
+
+li {
+    margin-bottom: 10px ;
+}
+
+.experienceWrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.iconsWrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    i {
+        font-size: 36px;
+    }
+}
+
+section {
+    padding: 10px 20px;
+    background-color: rgb(50, 50, 50);
+    border: black solid 5px;
+    margin: 20px 5px;
+
+}
