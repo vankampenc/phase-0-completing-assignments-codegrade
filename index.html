@@ -2,15 +2,25 @@
 <html>
 
 <head>
-    <title>My Webpage for Code The Dream!</title>
+    <title>My Webpage for Code The Dream</title>
     <meta name="author" content="Christopher Van Kampen">
-    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="refresh" content="300">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, JavaScript, Portfolio, Website, Code The Dream">
+
+    <link href="CSS/index.css" rel="stylesheet">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- Linked in Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <img src="Photos/ChrisLydiaTurkey.jpg" alt="Chris and Lydia in Cappadocia Turkey" width="400px"/>
+    <img src="Photos/ChrisLydiaTurkey.jpg" alt="Chris and Lydia in Cappadocia Turkey" class="imgMain"/>
     <h1> Christopher Van Kampen </h1>
 
     <section id="About">
@@ -20,18 +30,34 @@
   
     <section id="Experience">
         <h2> Experience </h2>
-        <ul>
-            <li>West Ottawa Public Schools </l1>
-            <li>OVD Insurance </li>
-        </ul>
+            <div class="experienceWrapper">
+                <p> West Ottawa Public Schools </p>
+                <p> - High School Math Teacher</p>
+            </div>
+            <div class="experienceWrapper">
+                <p> OVD Insurance <p> 
+                <p> - Client Service Representative <p> 
+            </div>
+            <div>
+                <P> 
+                    <a title="link to Christopher Van Kampen's resume" href="https://docs.google.com/document/d/1S-V4WUQHoZ0E3O7egn2nqyurfYboSE-SKgnUqe9kURs/edit?usp=sharing" target="_blank"> RESUME </a>
+                </P>
+            </div>
+
+
     </section>
    
     <section id="Connect">
         <h2> Connect </h2>
-        <ul>
-            <li><a title="" href="https://www.linkedin.com/in/vankampenc" target="_blank">LinkedIn</a></li>
-            <li><a title="" href="https://github.com/vankampenc" target="_blank">Github</a></li>
-        </ul>
+            <div class="iconsWrapper">
+                <a title="link to Christopher Van Kampen's linked" href="https://www.linkedin.com/in/vankampenc" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+                </a>
+                
+                <a title="link to Christopher Van Kampen's Github" href="https://github.com/vankampenc" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
     </section>
   
 </body>
