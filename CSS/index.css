@@ -1,5 +1,5 @@
 body {
-    margin: 20px;
+    margin: 0;
     background-color: rgb(50, 50, 50);
     color: white;
     font-family: "Playfair Display", Verdana, Geneva, Tahoma, sans-serif;
@@ -14,9 +14,49 @@ h2 {
     color: #eb8d46;
 }
 
+main {
+    padding: 120px 20px;
+}
+
 a {
-    color: #3f5db7;
+    color: #8c98bc;
     font-style: italic;
+}
+
+.boldFont {
+    font-weight: bolder;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    margin: 30px;
+}
+
+.navItem {
+    color: #8c98bc;
+    background-color: white;
+    padding: 10px;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background-color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+footer {
+    background-color: black;
+    padding: 300px 30px;
 }
 
 .imgMain {
@@ -37,6 +77,10 @@ li {
     gap: 5px;
 }
 
+.experienceSpacer {
+    margin-bottom: 50px;
+}
+
 .iconsWrapper {
     display: flex;
     align-items: baseline;
@@ -52,4 +96,10 @@ section {
     border: black solid 5px;
     margin: 20px 5px;
 
+}
+
+/* ID Section Scroll Adjuster */
+
+#About, #Experience, #Connect, #Skills, #Projects {
+    scroll-margin-top: 120px;
 }
