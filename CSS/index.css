@@ -97,3 +97,9 @@ section {
     margin: 20px 5px;
 
 }
+
+/* ID Section Scroll Adjuster */
+
+#About, #Experience, #Connect, #Skills, #Projects {
+    scroll-margin-top: 120px;
+}
