@@ -192,5 +192,5 @@ li {
 /* ID Section Scroll Adjuster */
 
 #About, #Experience, #Connect, #Skills, #Projects {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 7em;
 }
