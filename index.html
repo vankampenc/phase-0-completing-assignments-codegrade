@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, JavaScript, Portfolio, Website, Code The Dream">
 
-    <link href="CSS/index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -114,6 +114,30 @@
     </section>
 
 </main>
+
+<section id="leaveMessage">
+    <h2>Leave Message</h2>
+        <form name="leave_message">
+            <label>User Name:</label>
+            <input type="text", name="usersName", required="true">
+            <br/>
+
+            <label>Email:</label>
+            <input type="email", name="usersEmail", required="true">
+            <br/>
+
+            <label>Message:</label>
+            <textarea name="usersMessage" required="true"></textarea>
+            <br/>
+
+            <button type="submit">Submit</button>
+        </form>
+</section>
+
+<section id="messages">
+    <h2>Messages</h2>
+    <ul></ul>
+</section>
  
 <script src="js/index.js"></script>
 

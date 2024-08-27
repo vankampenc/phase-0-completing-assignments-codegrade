@@ -28,7 +28,6 @@ section {
     background-color: rgb(50, 50, 50);
     border: black solid 5px;
     margin: 20px 5px;
-
 }
 
 .imgMain {
@@ -38,6 +37,16 @@ section {
     margin-right: auto;
     width: 500px;
     border: 20px solid #3f5db7;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 15px;
+}
+
+label {
+    display: block;
+    margin: 20px 0px 5px;
 }
 
 /* Tablet */
@@ -193,4 +202,15 @@ li {
 
 #About, #Experience, #Connect, #Skills, #Projects {
     scroll-margin-top: 7em;
+}
+
+
+/* Messages Section */
+.messagesEmail {
+    font-size: 1.15rem;
+    color: none;
+}
+
+.messagesText {
+    padding: 0 10px 0 5px;
 }
