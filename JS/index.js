@@ -10,7 +10,6 @@ let thisYear = today.getFullYear();
 let myName = "Christopher Van Kampen"
 
 // Footer Styling
-footer.style.backgroundColor = 'red';
 footer.style.textAlign = 'center'
 
 //Copyright
@@ -28,3 +27,41 @@ for (let skill of skillsList) {
     skillLI.innerHTML = skill;
     skillsUL.appendChild(skillLI);
 }
+
+//Form
+const messageForm = document.getElementsByName("leave_message")[0];
+
+messageForm.addEventListener("submit", function(e){
+    e.preventDefault()
+    const form = e.target;
+
+    const usersName = form.usersName.value;
+    const usersEmail = form.usersEmail.value;
+    const usersMessage = form.usersMessage.value;
+
+    console.log("usersName", usersName);
+    console.log("usersEmail", usersEmail);
+    console.log("usersMessage", usersMessage);
+
+    console.log(form)
+
+    const messageSection = document.getElementById("messages")
+    const messageList = messageSection.querySelector('ul')
+    const newMessage = document.createElement('li')
+
+    newMessage.innerHTML = `<a class="messagesEmail" class="boldFont" href="mailto:${usersEmail}">User: ${usersName}</a><span class="messagesText">- ${usersMessage}</span>`;
+
+    const removeButton = document.createElement("button");
+    removeButton.innerText = "Remove";
+    removeButton.type = "button";
+
+    removeButton.addEventListener("click", function(eRemove) {
+        const entry = eRemove.target.parentNode;
+        entry.remove();
+    });
+
+    newMessage.appendChild(removeButton)
+    messageList.appendChild(newMessage);
+
+    form.reset();
+});
