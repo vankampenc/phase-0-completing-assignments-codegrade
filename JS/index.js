@@ -43,9 +43,7 @@ messageForm.addEventListener("submit", function(e){
     console.log("usersEmail", usersEmail);
     console.log("usersMessage", usersMessage);
 
-    console.log(form)
-
-    const messageSection = document.getElementById("messages")
+    const messageSection = document.getElementById("Messages")
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li')
 
@@ -65,3 +63,37 @@ messageForm.addEventListener("submit", function(e){
 
     form.reset();
 });
+
+// FETCH API
+
+const gitURL = "https://api.github.com/users/vankampenc/repos"
+
+async function fetchGitHub() {
+    try {
+        const response = await fetch(gitURL);
+
+        if (!response.ok) {
+            throw new Error('Request failed');
+        }
+
+        const data = await response.json();
+        return data;
+    }   catch (error) {
+        console.error('ERROR', error);
+    }
+}
+
+// Display Repos in List
+async function addRepos() {
+    const projectSection = document.getElementById("Projects");
+    const projectUL = projectSection.querySelector('ul');
+    const projects = await fetchGitHub()
+
+    for (let project of projects) {
+        let projectLI = document.createElement('li');
+        projectLI.innerHTML = project.name;
+        projectUL.appendChild(projectLI);
+    }   
+}
+
+addRepos()
