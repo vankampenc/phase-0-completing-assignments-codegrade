@@ -3,6 +3,7 @@ body {
     background-color: rgb(50, 50, 50);
     color: white;
     font-family: "Playfair Display", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
 }
 
 h1 {
@@ -40,8 +41,9 @@ section {
 }
 
 button {
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 5px 15px;
+    font-size: .8em;
 }
 
 label {
@@ -108,7 +110,7 @@ nav {
     background-color: white;
     padding: 10px 25px;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1.15em;
     text-decoration: none;
     font-weight: bold;
 }
@@ -194,9 +196,11 @@ li {
     align-items: baseline;
     gap: 10px;
     i {
-        font-size: 1.65rem;
+        font-size: 2em;
     }
 }
+
+
 
 /* ID Section Scroll Adjuster */
 
@@ -213,4 +217,16 @@ li {
 
 .messagesText {
     padding: 0 10px 0 5px;
+}
+
+.leaveMessage {
+    font-size: 1.75em;
+}
+
+input {
+    font-size: 1.2em;
+}
+
+textarea {
+    font-size: 1.2em;
 }
