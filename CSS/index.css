@@ -3,7 +3,7 @@ body {
     background-color: rgb(50, 50, 50);
     color: white;
     font-family: "Playfair Display", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2em;
+    font-size: 1.35em;
 }
 
 h1 {
@@ -51,20 +51,50 @@ label {
     margin: 20px 0px 5px;
 }
 
+/* Large Screens */
+
+@media (min-width:3000px) {
+    body {
+     font-size: 2rem;
+     background-color: red;
+    }
+ 
+    .imgMain {
+     margin-top: 0px;
+     width: 700px;
+     border: 27px solid #3f5db7;
+    }
+ 
+    main {
+     padding: 100px 20px;
+    }
+
+    h1 {
+        font-size: 3rem;   
+       }
+ }
+ 
+
 /* Tablet */
 
 @media (max-width:1024px) {
    body {
     font-size: .9rem;
+    background-color: yellow;
    }
 
    .imgMain {
     margin-top: 0px;
-    width: 350px;
+    width: 250px;
+    border: 15px solid #3f5db7;
    }
 
    main {
     padding: 100px 20px;
+   }
+
+   h1 {
+    font-size: 1.8rem;   
    }
 }
 
@@ -74,11 +104,13 @@ label {
 @media (max-width:430px) {
     body {
      font-size: .81rem;
+     background-color: blue;
     }
  
     .imgMain {
      margin-top: 0px;
-     width: 150px;
+     width: 100px;
+     border: 8px solid #3f5db7;
     }
  
     main {
@@ -86,7 +118,7 @@ label {
     }
 
     h1 {
-     font-size: 1.5rem;   
+     font-size: 1.2rem;   
     }
  }
 
