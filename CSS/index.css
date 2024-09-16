@@ -55,13 +55,12 @@ label {
 
 @media (min-width:3000px) {
     body {
-     font-size: 2rem;
-     background-color: red;
+     font-size: 1.9rem;
     }
  
     .imgMain {
-     margin-top: 0px;
-     width: 700px;
+     margin-top: 50px;
+     width: 600px;
      border: 27px solid #3f5db7;
     }
  
@@ -77,10 +76,9 @@ label {
 
 /* Tablet */
 
-@media (max-width:1024px) {
+@media (max-width:1204px) {
    body {
     font-size: .9rem;
-    background-color: yellow;
    }
 
    .imgMain {
@@ -90,21 +88,20 @@ label {
    }
 
    main {
-    padding: 100px 20px;
+    padding: 90px 20px;
    }
 
    h1 {
-    font-size: 1.8rem;   
+    font-size: 1.7rem;   
    }
 }
 
 
 /* Mobile */
 
-@media (max-width:430px) {
+@media (max-width:680px) {
     body {
      font-size: .81rem;
-     background-color: blue;
     }
  
     .imgMain {
@@ -114,7 +111,7 @@ label {
     }
  
     main {
-     padding: 100px 10px;
+     padding: 65px 10px;
     }
 
     h1 {
@@ -237,7 +234,7 @@ li {
 /* ID Section Scroll Adjuster */
 
 #About, #Experience, #Connect, #Skills, #Projects {
-    scroll-margin-top: 7em;
+    scroll-margin-top: 4.5em;
 }
 
 
