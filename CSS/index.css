@@ -51,72 +51,6 @@ label {
     margin: 20px 0px 5px;
 }
 
-/* Large Screens */
-
-@media (min-width:3000px) {
-    body {
-     font-size: 1.9rem;
-    }
- 
-    .imgMain {
-     margin-top: 50px;
-     width: 500px;
-     border: 27px solid #3f5db7;
-    }
- 
-    main {
-     padding: 100px 20px;
-    }
-
-    h1 {
-        font-size: 3rem;   
-       }
- }
- 
-
-/* Tablet */
-
-@media (max-width:1024px) {
-   body {
-    font-size: .9rem;
-   }
-
-   .imgMain {
-    width: 250px;
-    border: 15px solid #3f5db7;
-   }
-
-   main {
-    padding: 95px 20px;
-   }
-
-   h1 {
-    font-size: 1.7rem;   
-   }
-}
-
-
-/* Mobile */
-
-@media (max-width:430px) {
-    body {
-     font-size: .81rem;
-    }
- 
-    .imgMain {
-     width: 130px;
-     border: 8px solid #3f5db7;
-    }
- 
-    main {
-     padding: 70px 10px;
-    }
-
-    h1 {
-     font-size: 1.2rem;   
-    }
- }
-
 /* Text Modifiers */
 
 .boldFont {
@@ -172,6 +106,14 @@ li {
     margin-bottom: 50px;
 }
 
+/* Skills Section */
+
+.skillsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+}
+
 /* Connect Section */
 
 .iconsWrapper {
@@ -186,8 +128,9 @@ li {
 
 /* Messages Section */
 .messagesEmail {
-    font-size: 1.15rem;
+    font-size: 1.15em;
     color: none;
+    font-weight: bold;
 }
 
 .messagesText {
@@ -206,10 +149,17 @@ textarea {
     font-size: 1.2em;
 }
 
+.messagesList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
 /* ID Section Scroll Adjuster */
 
-#About, #Experience, #Connect, #Skills, #Projects {
-    scroll-margin-top: 6em;
+#About, #Experience, #Connect, #Skills, #Projects, #leaveMessage, #Messages {
+    scroll-margin-top: 5.3em;
 }
 
 
@@ -296,3 +246,85 @@ textarea {
     }
 
 }
+
+
+/* Large Screens */
+
+@media (min-width:3000px) {
+    body {
+     font-size: 1.9rem;
+    }
+ 
+    .imgMain {
+     margin-top: 50px;
+     width: 500px;
+     border: 27px solid #3f5db7;
+    }
+ 
+    main {
+     padding: 100px 20px;
+    }
+
+    h1 {
+        font-size: 3rem;   
+       }
+ }
+
+ .messagesList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+/* Tablet */
+
+@media (max-width:1024px) {
+   body {
+    font-size: .9rem;
+   }
+
+   .imgMain {
+    width: 250px;
+    border: 15px solid #3f5db7;
+   }
+
+   main {
+    padding: 95px 20px;
+   }
+
+   h1 {
+    font-size: 1.7rem;   
+   }
+}
+
+
+/* Mobile */
+
+@media (max-width:430px) {
+    body {
+     font-size: .81rem;
+    }
+ 
+    .imgMain {
+     width: 130px;
+     border: 8px solid #3f5db7;
+    }
+ 
+    main {
+     padding: 70px 10px;
+    }
+
+    h1 {
+     font-size: 1.2rem;   
+    }
+
+    .skillsList {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .messagesList {
+        display: unset;
+    }
+
+ }
