@@ -3,7 +3,7 @@ body {
     background-color: rgb(50, 50, 50);
     color: white;
     font-family: "Playfair Display", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2em;
+    font-size: 1.35em;
 }
 
 h1 {
@@ -36,7 +36,7 @@ section {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 350px;
     border: 20px solid #3f5db7;
 }
 
@@ -51,45 +51,6 @@ label {
     margin: 20px 0px 5px;
 }
 
-/* Tablet */
-
-@media (max-width:1024px) {
-   body {
-    font-size: .9rem;
-   }
-
-   .imgMain {
-    margin-top: 0px;
-    width: 350px;
-   }
-
-   main {
-    padding: 100px 20px;
-   }
-}
-
-
-/* Mobile */
-
-@media (max-width:430px) {
-    body {
-     font-size: .81rem;
-    }
- 
-    .imgMain {
-     margin-top: 0px;
-     width: 150px;
-    }
- 
-    main {
-     padding: 100px 10px;
-    }
-
-    h1 {
-     font-size: 1.5rem;   
-    }
- }
-
 /* Text Modifiers */
 
 .boldFont {
@@ -102,30 +63,16 @@ nav {
     display: flex;
     gap: 10px;
     justify-content: flex-end;
-    margin: 30px;
+    margin: 20px;
 }
 
 .navItem {
-    color: #3f5db7;
-    background-color: white;
-    padding: 10px 25px;
     font-style: normal;
     font-size: 1.15em;
     text-decoration: none;
     font-weight: bold;
 }
 
-.navItem:link, .navItem:visited {
-    background-color: white;
-}
-
-.navItem:focus, .navItem:hover {
-    background-color: #eb8d46;
-}
-
-.navItem:active {
-    background-color: rgb(255, 123, 0);
-}
 
 header {
     background-color: black;
@@ -135,36 +82,6 @@ header {
     position: fixed;
     top: 0;
     width: 100%
-}
-
-/* Tablet Header */
-
-@media (max-width:1024px) {
-
-    nav {
-        gap: 5px;
-        margin: 20px;
-    }
-    
-    .navItem {
-        padding: 5px 13px;
-        font-size: 1rem;
-    }
-}
-
-/* Mobile Header */
-
-@media (max-width:430px) {
-
-    nav {
-        gap: 3px;
-        margin: 13px;
-    }
-    
-    .navItem {
-        padding: 3px 9px;
-        font-size: .75rem;
-    }
 }
 
 /* Footer */
@@ -189,6 +106,14 @@ li {
     margin-bottom: 50px;
 }
 
+/* Skills Section */
+
+.skillsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+}
+
 /* Connect Section */
 
 .iconsWrapper {
@@ -201,18 +126,11 @@ li {
 }
 
 
-
-/* ID Section Scroll Adjuster */
-
-#About, #Experience, #Connect, #Skills, #Projects {
-    scroll-margin-top: 7em;
-}
-
-
 /* Messages Section */
 .messagesEmail {
-    font-size: 1.15rem;
+    font-size: 1.15em;
     color: none;
+    font-weight: bold;
 }
 
 .messagesText {
@@ -230,3 +148,183 @@ input {
 textarea {
     font-size: 1.2em;
 }
+
+.messagesList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+/* ID Section Scroll Adjuster */
+
+#About, #Experience, #Connect, #Skills, #Projects, #leaveMessage, #Messages {
+    scroll-margin-top: 5.3em;
+}
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #3f5db7;
+  }
+
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    width: 10em;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 1.10em;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    width: inherit;
+    font-family: "Playfair Display", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+  }
+
+  /* Add a Orange background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #eb8d46;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: inherit;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Tablet Header */
+
+@media (max-width:1024px) {
+
+    nav {
+        margin: 15px;
+    }
+
+}
+
+/* Mobile Header */
+
+@media (max-width:430px) {
+
+    nav {
+        margin: 15px;
+    }
+
+}
+
+
+/* Large Screens */
+
+@media (min-width:3000px) {
+    body {
+     font-size: 1.9rem;
+    }
+ 
+    .imgMain {
+     margin-top: 50px;
+     width: 500px;
+     border: 27px solid #3f5db7;
+    }
+ 
+    main {
+     padding: 100px 20px;
+    }
+
+    h1 {
+        font-size: 3rem;   
+       }
+ }
+
+ .messagesList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+/* Tablet */
+
+@media (max-width:1024px) {
+   body {
+    font-size: .9rem;
+   }
+
+   .imgMain {
+    width: 250px;
+    border: 15px solid #3f5db7;
+   }
+
+   main {
+    padding: 95px 20px;
+   }
+
+   h1 {
+    font-size: 1.7rem;   
+   }
+}
+
+
+/* Mobile */
+
+@media (max-width:430px) {
+    body {
+     font-size: .81rem;
+    }
+ 
+    .imgMain {
+     width: 130px;
+     border: 8px solid #3f5db7;
+    }
+ 
+    main {
+     padding: 70px 10px;
+    }
+
+    h1 {
+     font-size: 1.2rem;   
+    }
+
+    .skillsList {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .messagesList {
+        display: unset;
+    }
+
+ }

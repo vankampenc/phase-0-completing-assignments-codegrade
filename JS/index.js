@@ -14,7 +14,7 @@ footer.style.textAlign = 'center'
 
 //Copyright
 let copyright = document.createElement('p')
-copyright.innerHTML = `${myName} ${thisYear}`;
+copyright.innerHTML = `${myName}&copy${thisYear}`;
 footer.appendChild(copyright)
 
 // Skills List
@@ -47,7 +47,7 @@ messageForm.addEventListener("submit", function(e){
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li')
 
-    newMessage.innerHTML = `<a class="messagesEmail" class="boldFont" href="mailto:${usersEmail}">User: ${usersName}</a><span class="messagesText">- ${usersMessage}</span>`;
+    newMessage.innerHTML = `<a class="messagesEmail" class="boldFont" href="mailto:${usersEmail}">${usersName}</a><span class="messagesText">- ${usersMessage}</span>`;
 
     const removeButton = document.createElement("button");
     removeButton.innerText = "Remove";

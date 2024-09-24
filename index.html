@@ -24,24 +24,35 @@
 
 <body>
 
-<header class="sticky">
-    <nav>
-        <a href="#About" class="navItem">About</a>
-        <a href="#Experience" class="navItem">Experience</a>
-        <a href="#Skills" class="navItem">Skills</a>
-        <a href="#Projects" class="navItem">Projects</a>
-        <a href="#Connect" class="navItem">Connect</a>
-    </nav>
-</header>
+    <header class="sticky">
+        <nav>
+            <div class="navbar">
+                <div class="dropdown">
+                  <button class="dropbtn">Navigation
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#About" class="navItem">About</a>
+                    <a href="#Experience" class="navItem">Experience</a>
+                    <a href="#Skills" class="navItem">Skills</a>
+                    <a href="#Projects" class="navItem">Projects</a>
+                    <a href="#Connect" class="navItem">Connect</a>
+                    <a href="#leaveMessage" class="navItem">Leave Message</a>
+                    <a href="#Messages" class="navItem">Messages</a>
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </header>
 
 <main>
 
-    <img src="Photos/ChrisLydiaTurkey.jpg" alt="Chris and Lydia in Cappadocia Turkey" class="imgMain"/>
+    <img src="images/ChrisLydiaTurkey.jpg" alt="Chris and Lydia in Cappadocia Turkey" class="imgMain"/>
     <h1> Christopher Van Kampen </h1>
 
     <section id="About">
         <h2>About</h2>
-        <p> I am currently a part time students attending CTD classes. Additionally, I am renovating our house along with my coursework.</p>
+        <p> My professional career started in the field of education where I taught high school math for six years. Now, I am a student enrolled at Code The Dream with the goal to complete the program and transition into the field of software. Additionally, I am renovating our house and privately tutoring.</p>
     </section>
   
     <section id="Experience">
@@ -91,7 +102,7 @@
     <section id="Skills">
         <h2>Skills</h2>
             <div>
-                <ul>
+                <ul class="skillsList">
                 </ul>
             </div>
     </section>
@@ -113,6 +124,10 @@
                 
                 <a title="link to Christopher Van Kampen's Github" href="https://github.com/vankampenc" target="_blank">
                 <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href= "mailto: vankampensc@gmail.com">
+                <i class="fa fa-envelope"></i>
                 </a>
             </div>
     </section>
@@ -138,7 +153,7 @@
     
     <section id="Messages">
         <h2>Messages</h2>
-        <ul></ul>
+        <ul class="messagesList"></ul>
     </section>
     
 </main>
